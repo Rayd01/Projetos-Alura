@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aplicação de Flashcards para estudo">
+    <meta name="keywords" content="flashcards, estudo, memorização, aprendizagem">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Sistema de Flashcards | Estude com Cartões</title>
+</head>
+<body>
+    <header>
+        <h1>Sistema de Flashcards</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#cards">Cartões</a></li>
+                <li><a href="#about">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="flashcard-container">
+            <div class="controls">
+                <button id="prev-card">Anterior</button>
+                <button id="next-card">Próximo</button>
+            </div>
+
+            <div id="cards-wrapper">
+                <!-- Template do cartão -->
+                <article class="card">
+                    <div class="card__content">
+                        <div class="card__front">
+                            <h3 class="card__category">Programação</h3>
+                            <div class="card__question">
+                                <p>O que é JavaScript?</p>
+                            </div>
+                            <button class="card__flip-btn">Ver resposta</button>
+                        </div>
+                        
+                        <div class="card__back">
+                            <div class="card__answer">
+                                <p>O JavaScript é uma linguagem de programação</p>
+                            </div>
+                            <button class="card__flip-btn">Voltar à pergunta</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Sistema de Flashcards</p>
+            <p>Projeto desenvolvido pela Alura, sem fins lucrativos</p>
+            <nav class="footer-nav">
+                <a href="#termos">Termos de Uso</a>
+                <a href="#privacidade">Privacidade</a>
+                <a href="#contato">Contato</a>
+            </nav>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/questions.js"></script>
+</body>
+</html>
